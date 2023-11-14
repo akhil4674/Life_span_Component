@@ -1,0 +1,19 @@
+{
+    "name": "vehicle-spare-parts-lifespan",
+    "version": "1.0.0",
+    "description": "A React app to calculate the lifespan of vehicle spare parts",
+    "main": "index.js",
+    "scripts": {
+      "start": "react-scripts start",
+      "preview": "npm-run-all start serve",
+      "serve": "parcel index.html",
+      "build": "react-scripts build"
+    },
+    "dependencies": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0",
+      "npm-run-all": "^1.5.1",
+      "parcel": "^3.2.1"
+    }
+  }
+  
