@@ -1,8 +1,12 @@
+// src/components/App.js
+
 import React from "react";
+import NavBar from "./NavBar";
 import InputComponent from "./InputComponent";
 import LifespanComponent from "./LifespanComponent";
 import SparePartPricesComponent from "./SparePartPricesComponent";
 import calculateLifespan from "./utils";
+import "../styles.css";
 
 const App = () => {
   const [weight, setWeight] = React.useState(1500);
@@ -15,40 +19,33 @@ const App = () => {
     tires: 50,
   });
 
-  
-
   const handleChange = (name, value) => {
-    switch (name) {
-      case "weight":
-        setWeight(value);
-        break;
-      case "model":
-        setModel(value);
-        break;
-      case "drivingTerrain":
-        setDrivingTerrain(value);
-        break;
-      case "weatherConditions":
-        setWeatherConditions(value);
-        break;
-      default:
-        break;
-    }
+    // ... your handleChange logic ...
   };
 
   const lifespan = calculateLifespan(weight, model, drivingTerrain, weatherConditions);
 
   return (
-    <div>
-      <InputComponent
-        weight={weight}
-        model={model}
-        drivingTerrain={drivingTerrain}
-        weatherConditions={weatherConditions}
-        handleChange={handleChange}
-      />
-      <LifespanComponent lifespan={lifespan} />
-      <SparePartPricesComponent sparePartPrices={sparePartPrices} />
+    <div className="app-container">
+      <NavBar />
+
+      <div className="app-component input-component">
+        <InputComponent
+          weight={weight}
+          model={model}
+          drivingTerrain={drivingTerrain}
+          weatherConditions={weatherConditions}
+          handleChange={handleChange}
+        />
+      </div>
+
+      <div className="app-component lifespan-component">
+        <LifespanComponent lifespan={lifespan} />
+      </div>
+
+      <div className="app-component spare-part-prices-component">
+        <SparePartPricesComponent sparePartPrices={sparePartPrices} />
+      </div>
     </div>
   );
 };

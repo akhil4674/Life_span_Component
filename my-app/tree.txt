@@ -1,0 +1,44 @@
+project_root
+├── src
+│   ├── components
+│   │   ├── App.js
+│   │   ├── InputComponent.js
+│   │   ├── LifespanComponent.js
+│   │   └── SparePartPricesComponent.js
+│   │
+│   ├── styles.css
+│   │
+│   └── utils.js
+├── public
+│   ├── index.html
+│   └── app.bundle.js
+└── server.js
+
+
+
+-------------------------------------------
+
+project_root
+├── src
+│   ├── components
+│   │   ├── App.js
+│   │   ├── InputComponent.js
+│   │   ├── LifespanComponent.js
+│   │   └── SparePartPricesComponent.js
+│   │
+│   ├── styles.css
+│   │
+│   └── utils.js
+├── public
+│   ├── index.html
+│   └── app.bundle.js
+├── server.js
+└── images
+    ├── brakes
+    ├── engine
+    ├── tyre
+    └── icons
+
+
+
+logo --->https://studio.tailorbrands.com/business/118155057/wizard/editor?backTo=logos-page&currentId=8699465874&logosStepId=707481492&origBrandVersionId=8699465874&primaryBrandVersionId=8699465874
