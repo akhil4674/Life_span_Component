@@ -1,7 +1,8 @@
 import React from "react";
 import InputComponent from "./InputComponent";
-import LifespanComponent from "./InputComponent";
+import LifespanComponent from "./LifespanComponent";
 import SparePartPricesComponent from "./SparePartPricesComponent";
+import calculateLifespan from "./utils";
 
 const App = () => {
   const [weight, setWeight] = React.useState(1500);
