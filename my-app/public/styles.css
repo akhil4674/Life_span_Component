@@ -1,0 +1,49 @@
+/* Font style */
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  /* Color theme */
+  .vehicle-spare-parts-lifespan-app {
+    color: #ffffff;
+    background-color: #ff8c00;
+  }
+  
+  .input-component,
+  .lifespan-component,
+  .spare-part-prices-component {
+    background-color: #ffffff;
+    color: #00875a;
+  }
+  
+  /* Animations */
+  .input-component input,
+  .input-component select {
+    animation: fadeIn 0.5s;
+  }
+  
+  .lifespan-component p,
+  .spare-part-prices-component li {
+    animation: fadeUp 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
